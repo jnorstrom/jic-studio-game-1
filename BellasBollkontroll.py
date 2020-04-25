@@ -2,6 +2,8 @@
 
 import turtle
 
+s = turtle.getscreen()
+
 wn = turtle.Screen()
 wn.title("Bellas bollkontroll")
 wn.bgcolor("black")
@@ -47,8 +49,9 @@ def paddle_a_down():
 
 # Keyboard binding
 wn.listen()
-wn.onkeypress(paddle_a_up, "w")
-wn.onkeypress(paddle_a_down, "s")
+wn.onkey(paddle_a_up, "w")
+wn.onkey(paddle_a_down, "s")
+
 
 
 # Main game loop
